@@ -22,7 +22,7 @@ public class GetPlaceDetailsTask {
         this.placeDetailsService = placeDetailsService;
     }
 
-    @Scheduled(fixedRate = 1000000L)
+    @Scheduled(fixedRate = 15000L)
     public void getPlaceDetailsJob() {
 
         placeDetailsService.findAll().forEach(placeDetailsEntity -> {
