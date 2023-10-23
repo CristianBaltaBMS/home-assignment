@@ -32,6 +32,7 @@ public class PlacesControllerByRequest {
         } catch (Exception e) {
             log.error(e.getMessage());
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+            //""
         }
     }
 }
